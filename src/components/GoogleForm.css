@@ -1,0 +1,119 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgba(0, 0, 255, 0.612)
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.modal {
+    background-color: rgba(0, 0, 255, 0.612);
+    border-radius: 5px;
+    color: rgba(7, 24, 212, 0.318);
+    font-family: sans-serif;
+    margin-top: 40px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 1024px;
+    padding: 70px;
+    padding-right: 80px;
+}
+
+
+.itemLabel,
+.serviceLabel {
+    color: white;
+}
+
+.inputArea {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-top: -20px;
+    background-color: rgba(7, 24, 212, 0.318);
+    color: white;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.services {
+    display: flex;
+    gap: 10px;
+}
+
+.checkItem {
+    background-color: rgba(7, 24, 212, 0.318);
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.itemLabel {
+    margin-top: 10px;
+}
+
+.agree {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 18px;
+    gap: 14px;
+}
+
+
+
+
+
+.footerText {
+    margin-top: 35px;
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+button{
+    background-color: rgba(0, 0, 255, 0.612);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width:90px;
+    margin-top: 40px;
+    margin-left: 80%;
+}
+
+
+
+
+
+
+
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .modal {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .warning {
+        display: none;
+    }
+}
